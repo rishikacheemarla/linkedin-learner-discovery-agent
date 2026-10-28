@@ -15,6 +15,9 @@ A Python demo app for public-search X-ray queries, persona classification, perso
 **Mock profile names and LinkedIn-style URLs are fictional placeholders. Do not use them for real outreach.**
 
 ## Architecture
+
+## Architecture
+
 ```mermaid
 flowchart TD
     A[User] --> B[Streamlit Dashboard]
@@ -29,6 +32,7 @@ flowchart TD
     J --> K[Manual Review and User-Initiated Outreach]
     B -. API alternative .-> L[FastAPI]
 ```
+
 
 ## Setup (Windows PowerShell)
 ```powershell
