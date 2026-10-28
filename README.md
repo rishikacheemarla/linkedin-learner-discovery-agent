@@ -16,7 +16,7 @@ A Python demo app for public-search X-ray queries, persona classification, perso
 
 ## Architecture
 
-## Architecture
+
 
 ```mermaid
 flowchart TD
