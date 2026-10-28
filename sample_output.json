@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Aarav Mehta",
+    "headline": "Final Year B.Tech Computer Science Student | Aspiring AI Engineer",
+    "snippet": "Building Python projects and exploring machine learning fundamentals.",
+    "url": "https://www.linkedin.com/in/aarav-mehta-demo/",
+    "detected_persona": "Fresher",
+    "relevance_score": 9,
+    "reasoning": "Final-year student profile with explicit interest in AI engineering and Python projects.",
+    "connection_note": "Hi Aarav, your final-year CS background and Python projects are a good starting point for AI engineering. I can share a practical learning roadmap if useful.",
+    "follow_up_dm": "Hi Aarav! Since you're exploring AI engineering while finishing your CS degree, consider combining Python fundamentals, ML basics, and one portfolio project. Explore code2careerai.com for learning resources if useful. Best of luck!"
+  },
+  {
+    "name": "Diya Rao",
+    "headline": "2026 Graduate | Computer Science | Learning Data Science",
+    "snippet": "Interested in Python, analytics, and entry-level AI projects.",
+    "url": "https://www.linkedin.com/in/diya-rao-demo/",
+    "detected_persona": "Fresher",
+    "relevance_score": 8,
+    "reasoning": "2026 graduate interested in data science and entry-level projects.",
+    "connection_note": "Hi Diya, your 2026 graduation and interest in data science stand out. I can share a roadmap for Python, analytics, and practical AI projects if useful.",
+    "follow_up_dm": "Hi Diya! Your interest in data science is a great foundation. Consider building an end-to-end project showing data cleaning, analysis, and a clear result. Explore code2careerai.com for learning resources if helpful."
+  },
+  {
+    "name": "Ishaan Patel",
+    "headline": "B.Tech Student | AI and Cloud Enthusiast",
+    "snippet": "Looking for a structured roadmap to build practical AI skills.",
+    "url": "https://www.linkedin.com/in/ishaan-patel-demo/",
+    "detected_persona": "Fresher",
+    "relevance_score": 8,
+    "reasoning": "Student profile mentions AI and cloud interests and a desire for structured practical learning.",
+    "connection_note": "Hi Ishaan, your interest in AI and cloud is a useful combination. I can share a structured roadmap focused on fundamentals and hands-on projects if useful.",
+    "follow_up_dm": "Hi Ishaan! Combining cloud fundamentals with practical AI projects can help you understand application deployment. Start with Python and an API-based project. Explore code2careerai.com if useful. All the best!"
+  },
+  {
+    "name": "Meera Nair",
+    "headline": "Associate Software Engineer | 1 year experience | Python",
+    "snippet": "Working on backend services and exploring LLM application development.",
+    "url": "https://www.linkedin.com/in/meera-nair-demo/",
+    "detected_persona": "1-2_YOE",
+    "relevance_score": 8,
+    "reasoning": "Associate software engineer with one year of experience and interest in LLM applications.",
+    "connection_note": "Hi Meera, your backend experience and interest in LLM applications are a strong base. I can share a practical roadmap for building an AI app if useful.",
+    "follow_up_dm": "Hi Meera! Since you're already working with backend services, build on that experience with LLM APIs, structured outputs, and evaluation basics. Explore code2careerai.com for learning resources if helpful."
+  },
+  {
+    "name": "Rohan Das",
+    "headline": "Junior Data Analyst | 2 years experience | SQL and Power BI",
+    "snippet": "Interested in expanding analytics skills with applied machine learning.",
+    "url": "https://www.linkedin.com/in/rohan-das-demo/",
+    "detected_persona": "1-2_YOE",
+    "relevance_score": 8,
+    "reasoning": "Junior data analyst with two years of experience and interest in machine learning.",
+    "connection_note": "Hi Rohan, your SQL and Power BI experience can translate well into applied ML projects. I can share a roadmap from analytics into practical AI if useful.",
+    "follow_up_dm": "Hi Rohan! Your analytics background is a useful starting point for applied ML. Consider a project that starts with a business question, prepares data, and compares a simple baseline with an ML model. Explore code2careerai.com if useful."
+  },
+  {
+    "name": "Ananya Singh",
+    "headline": "Software Engineer | Early Career | Java and APIs",
+    "snippet": "Building production experience and starting to learn GenAI tools.",
+    "url": "https://www.linkedin.com/in/ananya-singh-demo/",
+    "detected_persona": "1-2_YOE",
+    "relevance_score": 8,
+    "reasoning": "Early-career software engineer who is beginning to learn GenAI.",
+    "connection_note": "Hi Ananya, your Java and API experience is relevant to building GenAI applications. I can share a practical roadmap covering LLM APIs and deployment if helpful.",
+    "follow_up_dm": "Hi Ananya! Your API experience can help when integrating LLMs into applications. Try a small project with structured responses, error handling, and evaluation. Explore code2careerai.com for learning resources if helpful."
+  },
+  {
+    "name": "Karthik Iyer",
+    "headline": "System Administrator transitioning into AI Engineering",
+    "snippet": "Learning Python, APIs, and Generative AI while bringing infrastructure experience.",
+    "url": "https://www.linkedin.com/in/karthik-iyer-demo/",
+    "detected_persona": "Career_Switcher",
+    "relevance_score": 9,
+    "reasoning": "System administration background and explicit AI-engineering transition goal.",
+    "connection_note": "Hi Karthik, your system administration experience gives you useful infrastructure context for AI engineering. I can share a roadmap covering Python, LLM APIs, and deployment if useful.",
+    "follow_up_dm": "Hi Karthik! Your infrastructure experience can be valuable when deploying AI applications. A practical path is Python, API integration, LLM evaluation, and a small deployed project. Explore code2careerai.com if useful."
+  },
+  {
+    "name": "Sara Khan",
+    "headline": "QA Engineer | Exploring Python Automation and GenAI",
+    "snippet": "Interested in moving from manual testing to AI-assisted test engineering.",
+    "url": "https://www.linkedin.com/in/sara-khan-demo/",
+    "detected_persona": "Career_Switcher",
+    "relevance_score": 8,
+    "reasoning": "QA engineer exploring automation and GenAI, indicating a possible transition toward AI-assisted engineering.",
+    "connection_note": "Hi Sara, your QA background and interest in Python automation and GenAI are a useful combination. I can share a project roadmap for AI-assisted test engineering if helpful.",
+    "follow_up_dm": "Hi Sara! You could build on QA experience by creating a Python tool that drafts test cases with an LLM, then validates results. This is a practical bridge into AI-assisted engineering. Explore code2careerai.com if helpful."
+  },
+  {
+    "name": "Vikram Joshi",
+    "headline": "IT Support Analyst | Learning Python and LLM applications",
+    "snippet": "Building technical projects to transition toward software and AI roles.",
+    "url": "https://www.linkedin.com/in/vikram-joshi-demo/",
+    "detected_persona": "Career_Switcher",
+    "relevance_score": 8,
+    "reasoning": "IT support background and active learning in Python and LLM applications suggest a transition toward AI roles.",
+    "connection_note": "Hi Vikram, your IT support experience and focus on Python and LLM apps are a practical starting point. I can share a project-based transition roadmap if useful.",
+    "follow_up_dm": "Hi Vikram! Your support experience can help you identify problems worth automating. Try a small Python tool, add an LLM API, and document how you evaluate output. Explore code2careerai.com if useful."
+  }
+]
