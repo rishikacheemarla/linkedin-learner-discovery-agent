@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 from pathlib import Path
 import requests
 from app.models.profile import Profile
@@ -20,16 +21,39 @@ def _matches(p, persona):
     return any(term in t for term in terms.get(persona, []))
 
 def search_profiles(persona: str, keywords: str = "", use_mock: bool = True):
-    if use_mock or not os.getenv("SERPER_API_KEY"):
+    if use_mock:
         return [p for p in load_mock_profiles() if _matches(p, persona)], "mock"
-    r = requests.post("https://google.serper.dev/search",
-        headers={"X-API-KEY": os.environ["SERPER_API_KEY"], "Content-Type": "application/json"},
-        json={"q": build_boolean_query(persona, keywords), "num": 10}, timeout=20)
-    r.raise_for_status()
-    profiles = []
-    for item in r.json().get("organic", []):
-        link = item.get("link", "")
-        if "linkedin.com/in/" in link:
-            profiles.append(Profile(name=item.get("title", "LinkedIn profile").split(" - ")[0][:120],
-                headline=item.get("title", "")[:500], snippet=item.get("snippet", "")[:1200], url=link.split("?")[0]))
-    return profiles, "serper"
+
+    api_key = os.getenv("SERPER_API_KEY")
+    if not api_key:
+        return [p for p in load_mock_profiles() if _matches(p, persona)], "mock (Serper API key missing)"
+
+    try:
+        response = requests.post(
+            "https://google.serper.dev/search",
+            headers={"X-API-KEY": api_key, "Content-Type": "application/json"},
+            json={"q": build_boolean_query(persona, keywords), "num": 10},
+            timeout=20,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        if not isinstance(payload, dict) or not isinstance(payload.get("organic"), list):
+            raise ValueError("Invalid Serper response")
+
+        profiles = []
+        for item in payload.get("organic", []):
+            if not isinstance(item, dict):
+                continue
+            link = item.get("link", "")
+            title = item.get("title", "LinkedIn profile")
+            snippet = item.get("snippet", "")
+            if isinstance(link, str) and "linkedin.com/in/" in link:
+                profiles.append(Profile(
+                    name=(title if isinstance(title, str) else "LinkedIn profile").split(" - ")[0][:120],
+                    headline=title[:500] if isinstance(title, str) else "",
+                    snippet=snippet[:1200] if isinstance(snippet, str) else "",
+                    url=link.split("?")[0],
+                ))
+        return profiles, "serper"
+    except (requests.RequestException, ValueError, TypeError):
+        return [p for p in load_mock_profiles() if _matches(p, persona)], "mock (Serper unavailable)"
